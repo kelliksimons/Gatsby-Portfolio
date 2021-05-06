@@ -111,4 +111,5 @@ padding: 0 1rem;
 const HeroP = styled.p`
 font-sized: clamp(1rem, 3vw, 3rem);
 margin-bottom: 2rem;
+font-weight: 400;
 `
