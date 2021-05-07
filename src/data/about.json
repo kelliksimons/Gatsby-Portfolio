@@ -1,26 +1,26 @@
 [
     {
         "img": "../assets/images/image-1.jpg",
+        "alt": "Javascript",
+        "name": "Javascript",
+        "button": "View Repository"
+    },
+    {
+        "img": "../assets/images/image-1.jpg",
+        "alt": "ReactJS",
+        "name": "ReactJS",
+        "button": "View Repository"
+    },
+    {
+        "img": "../assets/images/image-1.jpg",
+        "alt": "Python",
+        "name": "Python",
+        "button": "View Repository"
+    },
+    {
+        "img": "../assets/images/image-1.jpg",
         "alt": "GraphQL",
         "name": "GraphQL",
-        "button": "View Repository"
-    },
-    {
-        "img": "../assets/images/image-1.jpg",
-        "alt": "GraphQL2",
-        "name": "GraphQL2",
-        "button": "View Repository"
-    },
-    {
-        "img": "../assets/images/image-1.jpg",
-        "alt": "GraphQL3",
-        "name": "GraphQL3",
-        "button": "View Repository"
-    },
-    {
-        "img": "../assets/images/image-1.jpg",
-        "alt": "GraphQL4",
-        "name": "GraphQL4",
         "button": "View Repository"
 
     }
