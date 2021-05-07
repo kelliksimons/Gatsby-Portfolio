@@ -7,20 +7,20 @@
     },
     {
         "img": "../assets/images/image-1.jpg",
-        "alt": "GraphQL",
-        "name": "GraphQL",
+        "alt": "GraphQL2",
+        "name": "GraphQL2",
         "button": "View Repository"
     },
     {
         "img": "../assets/images/image-1.jpg",
-        "alt": "GraphQL",
-        "name": "GraphQL",
+        "alt": "GraphQL3",
+        "name": "GraphQL3",
         "button": "View Repository"
     },
     {
         "img": "../assets/images/image-1.jpg",
-        "alt": "GraphQL",
-        "name": "GraphQL",
+        "alt": "GraphQL4",
+        "name": "GraphQL4",
         "button": "View Repository"
 
     }

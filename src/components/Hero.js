@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {Button} from './Button'
 import Video from '../assets/videos/Aggieland.mp4'
-import Video2 from '../assets/videos/TherapyMovie.mp4'
+
 const Hero = () => {
     return (
        <HeroContainer>

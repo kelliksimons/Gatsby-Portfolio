@@ -1,29 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
 import {useStaticQuery, graphql} from 'gatsby'
-import Img from 'gatsby-plugin-image'
+import Img from 'gatsby-image'
+import {Button} from './Button'
 
 const About = () => {
     const data = useStaticQuery(graphql`
-      query AboutQuery {
+     query AboutQuery {
         allAboutJson {
-             edges {
-                 node {
+            edges {
+            node {
                 alt
-                    button
-                    name
-                    img {
-                    childrenImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                            
-            }
+                button
+                name
+                img {
+                childImageSharp {
+                    fluid {
+                    ...GatsbyImageSharpFluid
+                    }
           }
         }
       }
     }
   }
 }
+
+
 
         `)
 
@@ -32,10 +34,20 @@ function getAbout(data){
     const aboutArray = []
     data.allAboutJson.edges.forEach((item,index) => {
         aboutArray.push(
-            <div key={index}> 
-                <Img src = {item.node.img.childImageSharp.fluid.src}
-                fluid ={item.node.img.childImageSharp.fluid}/>
-            </div>
+            <SkillCard key={index}> 
+                <Img 
+                src = {item.node.img.childImageSharp.fluid.src}
+                alt = {item.node.alt}
+                fluid = {item.node.img.childImageSharp.fluid}
+
+                />
+                <SkillInfo>
+                <TextWrap>
+                <SkillTitle>{item.node.name}</SkillTitle>
+                </TextWrap>
+                <Button to="/projects">{item.node.name}</Button>
+                </SkillInfo>
+            </SkillCard>
             
         )
     })    
@@ -69,5 +81,22 @@ color: #000;
 
 ` 
 const SkillsWrapper = styled.div `
+
+
+`
+const SkillCard = styled.div `
+
+
+`
+const SkillInfo = styled.div `
+
+
+`
+const TextWrap = styled.div `
+
+
+`
+const SkillTitle = styled.div `
+
 
 `
