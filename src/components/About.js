@@ -75,8 +75,9 @@ function getAbout(data){
 export default About
 
 const SkillsContainer = styled.div`
+
 min-height: 100vh;
-padding: 5rem calc((100vw-1300px)/2);
+padding: 5rem calc((100vw - 1300px) / 2);
 color: #fff;
 `
 
@@ -95,7 +96,7 @@ justify-items: center;
 padding: 0 2rem;
 
 @media screen and (max-width: 1200px){
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -117,10 +118,10 @@ transition: 0.2 ease;
 const SkillImg = styled(Img)`
 height:100%
 max-width: 100%;
-position: absolute;
+position: relative;
 border-radius: 10px;
 filter: brightness(70%);
-transition: 0.4s cubic-bezier(0.075,0.82,0.165,1);
+transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 &:hover{
     filter: brightness(100%);
