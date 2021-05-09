@@ -31,14 +31,20 @@ const Testimonials = () => { // graph ql query for testimonial images
             <ContentWrapper>
                 <ColumnOne>
                     <Testimonial>
-                        <IoMdCheckmarkCircleOutline/>
+                        <IoMdCheckmarkCircleOutline css={`
+                        color: #3fffa8; 
+                        font-size: 2rem; 
+                        margin-bottom: 1rem;`}/>/>
                         <h3>React Portfolio</h3>
                         <p>
                         {" "}
                         "In this project I translated a HTML template into a React application. Deployed via Github"</p>
                     </Testimonial>
                     <Testimonial>
-                        <FaRegLightbulb/>
+                        <FaRegLightbulb css={`
+                        color: #f9b19b; 
+                        font-size: 2rem; 
+                        margin-bottom: 1rem;`}/>
                         <h3>Music-Share</h3>
                         <p>"Utilize Youtube API and Spotify API to create a web application that implements both on the same browser,
                         allowing users to send linked playlists to friends."</p>
