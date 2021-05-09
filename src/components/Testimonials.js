@@ -14,7 +14,9 @@ const Testimonials = () => {
                     <Testimonial>
                         <IoMdCheckmarkCircleOutline/>
                         <h3>React Portfolio</h3>
-                        <p>"In this project I translated a HTML template into a React application. Deployed via Github"</p>
+                        <p>
+                        {" "}
+                        "In this project I translated a HTML template into a React application. Deployed via Github"</p>
                     </Testimonial>
                     <Testimonial>
                         <FaRegLightbulb/>
