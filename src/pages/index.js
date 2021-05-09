@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Testimonials from "../components/Testimonials"
 import Stats from "../components/Stats"
+import Email from "../components/Email"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,8 @@ const IndexPage = () => (
     <About heading = "Learn more about my background and experience below"/>
     <Testimonials />
     <Stats />
+    <Email />
+
 
   </Layout>
 )
