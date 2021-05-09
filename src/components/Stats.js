@@ -1,32 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {GiEarthAmerica} from 'react-icons/gi'
-import {MdAirplanemodeActive, MdTimer, MdTitle} from 'react-icons/md'
-import {FaMoneyCheck} from 'react-icons/Fa'
+import {StatsData} from '../data/StatsData'
 
 
-const StatsData = [
-    {
-        icon: (<GiEarthAmerica />),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
-    },
-    {
-        icon: (<MdAirplanemodeActive />),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
-    },
-    {
-        icon: (<MdTimer />),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
-    },
-    {
-        icon: (<FaMoneyCheck />),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
-    },
-]
 
 const Stats = () => {
     return (
@@ -94,8 +70,10 @@ font-size: 3rem;
 margin-bottom: 1rem;
 
 `
-const Title = styled.div `
+const Title = styled.p `
 font-size: clamp(1rem, 2.5vw, 1.5rem);
 margin-bottom: 0.5rem;
 `
-const Description = styled.p ``
+const Description = styled.p `
+
+`
