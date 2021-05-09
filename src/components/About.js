@@ -36,7 +36,7 @@ function getAbout(data){
         aboutArray.push(
             <SkillCard key={index}> 
                 <SkillImg 
-                src = {item.node.img.childImageSharp.fluid.src}
+                // src = {item.node.img.childImageSharp.fluid.src}
                 alt = {item.node.alt}
                 fluid = {item.node.img.childImageSharp.fluid}
 
