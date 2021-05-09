@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
-import {Button } from './Button'
+import { Button } from './Button'
 
 const About = ({heading}) => {
     const data = useStaticQuery(graphql`
@@ -45,10 +45,14 @@ function getAbout(data){
                 <TextWrap>
                 <SkillTitle>{item.node.name}</SkillTitle>
                 </TextWrap>
-                <Button to="/projects" primary="true" round="true" 
+
+                <Button 
+                to="/projects" 
+                primary="true" 
+                round="true" 
                 css={`
                     position: absolute;
-                    top: 420px;
+                    top: 250px;
                     font-size: 14px; `}>
                     
             {item.node.button}
@@ -143,10 +147,10 @@ const TextWrap = styled.div `
 display: flex;
 align-items: center;
 position: absolute;
-top: 250px;
-
+top: 375px;
 
 `
+
 const SkillTitle = styled.div `
 font-weight: 400;
 font-size: 1rem;
