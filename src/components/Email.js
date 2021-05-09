@@ -14,7 +14,20 @@ const Email = () => {
                       <label htmlFor ="email">
                       <input type= "email" placeholder= "Enter your email" id= "email"/>
                       </label>
-                      <Button>Contact Me</Button>
+                      <Button as ="button" 
+                      type= "submit" 
+                      primary="true" 
+                      round= "true" 
+                      css={`
+                      height: 48px;
+                      @media screen and (max-width: 768px){
+                          width: 100%
+                          min-width: 350px;
+                       }   
+                      @media screen and (max-width: 400px){
+                          width: 100%
+                          min-width: 250px;
+                      } `}>Contact Me</Button>
                   </FormWrap>
               </form>
           </EmailContent>

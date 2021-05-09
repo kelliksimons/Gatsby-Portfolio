@@ -52,7 +52,7 @@ function getAbout(data){
                 round="true" 
                 css={`
                     position: absolute;
-                    top: 250px;
+                    top: 420px;
                     font-size: 14px; `}>
                     
             {item.node.button}
@@ -79,7 +79,7 @@ function getAbout(data){
 export default About
 
 const SkillsContainer = styled.div`
-
+background: #121212;
 min-height: 100vh;
 padding: 5rem calc((100vw - 1300px) / 2);
 color: #fff;
@@ -120,7 +120,7 @@ transition: 0.2 ease;
 
 `
 const SkillImg = styled(Img)`
-height:100%
+height:100%;
 max-width: 100%;
 position: relative;
 border-radius: 10px;

@@ -34,7 +34,7 @@ const Testimonials = () => { // graph ql query for testimonial images
                         <IoMdCheckmarkCircleOutline css={`
                         color: #3fffa8; 
                         font-size: 2rem; 
-                        margin-bottom: 1rem;`}/>/>
+                        margin-bottom: 1rem;`}/>
                         <h3>React Portfolio</h3>
                         <p>
                         {" "}
@@ -66,8 +66,8 @@ const Testimonials = () => { // graph ql query for testimonial images
 export default Testimonials
 
 const TestimonialsContainer = styled.div`
-width: 100%
-background: #fcfcfc;
+width: 100%;
+background: #121212;
 color: #000;
 padding: 5rem calc((100vw - 1300px) / 2);
 height: 100%;
