@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { FaRegLightbulb } from 'react-icons/fa'
 import {IoMdCheckmarkCircleOutline} from 'react-icons/io'
 import { useStaticQuery,graphql } from 'gatsby'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Testimonials = () => { // graph ql query for testimonial images
     const data = useStaticQuery(graphql`  
@@ -29,8 +31,8 @@ const Testimonials = () => { // graph ql query for testimonial images
             <TopLine>Testimonials</TopLine>
             <Description>Previous Projects</Description>
             <ContentWrapper>
-                <ColumnOne>
-                    <Testimonial>
+                <ColumnOne data-aos = "flip-left">
+                    <Testimonial data-aos = "fade">
                         <IoMdCheckmarkCircleOutline css={`
                         color: #3fffa8; 
                         font-size: 2rem; 
@@ -40,7 +42,7 @@ const Testimonials = () => { // graph ql query for testimonial images
                         {" "}
                         "In this project I translated a HTML template into a React application. Deployed via Github"</p>
                     </Testimonial>
-                    <Testimonial>
+                    <Testimonial data-aos = "fade">
                         <FaRegLightbulb css={`
                         color: #f9b19b; 
                         font-size: 2rem; 
@@ -50,7 +52,7 @@ const Testimonials = () => { // graph ql query for testimonial images
                         allowing users to send linked playlists to friends."</p>
                     </Testimonial>
                 </ColumnOne>
-                <ColumnTwo>
+                <ColumnTwo data-aos = "flip-left">
                     {data.allFile.edges.map((image,key) => (  //adding graph ql data to col two
 
                     <Images key = {key} fluid = {image.node.childImageSharp.fluid}/> // adding image
@@ -68,7 +70,7 @@ export default Testimonials
 const TestimonialsContainer = styled.div`
 width: 100%;
 background: #121212;
-color: #000;
+color: #fff;
 padding: 5rem calc((100vw - 1300px) / 2);
 height: 100%;
 
@@ -112,7 +114,7 @@ h3{
     
 }
 p{
-    color: #3b3b3b;
+    color: #fff;
 }
 `
 const ColumnTwo = styled.div`

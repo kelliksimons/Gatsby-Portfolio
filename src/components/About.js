@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import { Button } from './Button'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const About = ({heading}) => {
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+    }, []);
     const data = useStaticQuery(graphql`
      query AboutQuery {
         allAboutJson {
@@ -34,7 +39,7 @@ function getAbout(data){
     const aboutArray = []
     data.allAboutJson.edges.forEach((item,index) => {
         aboutArray.push(
-            <SkillCard key={index}> 
+            <SkillCard key={index} data-aos="fade-left"> 
                 <SkillImg 
                 // src = {item.node.img.childImageSharp.fluid.src}
                 alt = {item.node.alt}
@@ -43,7 +48,7 @@ function getAbout(data){
                 />
                 <SkillInfo>
                 <TextWrap>
-                <SkillTitle>{item.node.name}</SkillTitle>
+                <SkillTitle data-aos = "fade-down">{item.node.name}</SkillTitle>
                 </TextWrap>
 
                 <Button 
@@ -82,14 +87,14 @@ const SkillsContainer = styled.div`
 background: #121212;
 min-height: 100vh;
 padding: 5rem calc((100vw - 1300px) / 2);
-color: #fff;
+color: #000;
 `
 
 const SkillsHeading = styled.div `
 font-size: clamp(1.2rem, 5vw, 3rem);
 text-align: center;
 margin-bottom: 5rem;
-color: #000;
+color: #fff;
 ` 
 
 const SkillsWrapper = styled.div `
@@ -133,6 +138,7 @@ transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 `
 const SkillInfo = styled.div `
+color:#fff;
 display: flex;
 flex-direction: column;
 align-items: flex-start;

@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import {StatsData} from '../data/StatsData'
-
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 
 const Stats = () => {
+
     return (
         <StatsContainer>
             <Heading>Why Choose Me</Heading>
-            <Wrapper>
+            <Wrapper data-aos = "fade-up">
             {StatsData.map((item,index)=>{
                 return(
                 <StatsBox key = {index}>
@@ -30,7 +32,7 @@ export default Stats
 const StatsContainer = styled.div`
 width: 100%;
 background: #121212;
-color: #000;
+color: #fff;
 display: flex;
 flex-direction: column;
 justify-content: center;

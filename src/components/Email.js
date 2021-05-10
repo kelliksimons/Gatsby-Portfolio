@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import EmailBg from '../assets/images/email-2.jpg'
 import {Button } from './Button'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Email = () => {
     return (
       <EmailContainer>
-          <EmailContent>
+          <EmailContent data-aos="slide-up">
               <h1>Want to learn more or get in Contact with me?</h1>
               <p>Connect with me below!</p>
               <form action = '#'>
