@@ -7,6 +7,8 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 
 const About = ({heading}) => {
+
+
     useEffect(()=>{
         Aos.init({duration: 2000});
     }, []);
@@ -74,7 +76,7 @@ function getAbout(data){
 
 
     return (
-        <SkillsContainer>
+        <SkillsContainer id = "About">
             <SkillsHeading>{heading}</SkillsHeading>
             <SkillsWrapper>{getAbout(data)}</SkillsWrapper>
         </SkillsContainer>

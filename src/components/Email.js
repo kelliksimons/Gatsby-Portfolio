@@ -7,7 +7,7 @@ import "aos/dist/aos.css"
 
 const Email = () => {
     return (
-      <EmailContainer>
+      <EmailContainer id = "Contact">
           <EmailContent data-aos="slide-up">
               <h1>Want to learn more or get in Contact with me?</h1>
               <p>Connect with me below!</p>

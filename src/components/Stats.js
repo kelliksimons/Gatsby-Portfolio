@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 const Stats = () => {
 
     return (
-        <StatsContainer>
+        <StatsContainer id = "Next">
             <Heading>Why Choose Me</Heading>
             <Wrapper data-aos = "fade-up">
             {StatsData.map((item,index)=>{

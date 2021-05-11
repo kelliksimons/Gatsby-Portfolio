@@ -15,7 +15,7 @@ const Hero = () => {
                <HeroItems>
                    <HeroH1>Welcome, I'm Kellik Simons</HeroH1>
                    <HeroP>NCA&T Computer Science Graduate & Full Stack Software Engineer </HeroP>
-                   <Button primary = 'true' big= 'true' round='true' to="/about">Get To Know Me!</Button>
+                   <Button primary = 'true' big= 'true' round='true' to="#About">Get To Know Me!</Button>
                </HeroItems>
            </HeroContent>
        </HeroContainer>

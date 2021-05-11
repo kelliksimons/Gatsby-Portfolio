@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import {menuData} from '../data/MenuData'
 import { Button } from "./Button"
+import resume from "../assets/Docs/kellik-resume.pdf"
 
 const Header = () => {
 
@@ -22,7 +23,7 @@ const Header = () => {
 
       </NavMenu>
       <NavBtn>
-          <Button primary = "true" round = "true" to="/projects">Contact Me</Button>
+          <Button primary = "true" round = "true" to="/#Contact">Contact Me</Button>
       </NavBtn>
     </Nav>
   )

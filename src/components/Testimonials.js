@@ -27,7 +27,7 @@ const Testimonials = () => { // graph ql query for testimonial images
 
     
     return (
-        <TestimonialsContainer>
+        <TestimonialsContainer id = "Projects">
             <TopLine>Testimonials</TopLine>
             <Description>Previous Projects</Description>
             <ContentWrapper>
