@@ -1,10 +1,13 @@
 import React from "react"
 import {Link} from "gatsby"
+//import {Link} from "react-scroll"
 import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import {menuData} from '../data/MenuData'
 import { Button } from "./Button"
 import resume from "../assets/Docs/kellik-resume.pdf"
+
+//let Link     = Scroll.Link;
 
 const Header = () => {
 
@@ -17,13 +20,15 @@ const Header = () => {
 
           <NavLink to={item.link} key={index}>
             {item.title}
+          
           </NavLink>
 
         ))}
 
       </NavMenu>
       <NavBtn>
-          <Button primary = "true" round = "true" to="/#Contact">Contact Me</Button>
+          <Button  primary = "true" round = "true" to= "#Contact"
+           >Contact Me</Button>
       </NavBtn>
     </Nav>
   )
