@@ -7,6 +7,7 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 
 
+
 const About = ({heading}) => {
 
 
@@ -86,14 +87,15 @@ function getAbout(data){
 
     return (
         <SkillsContainer id = "About">
-            <SkillsHeading>{heading}</SkillsHeading>
-                <HeaderImg fluid={data.file.childImageSharp.fluid}/>
+            <SkillsHeading data-aos = "fade-down">{heading}</SkillsHeading>
+            <HeaderImg fluid={data.file.childImageSharp.fluid} data-aos="fade-left"></HeaderImg>
+
             <TextWrap>
                 <SkillTitle data-aos = "fade-down">My professional background is in Software Development 
                 and Project Management. I also enjoy Gaming, Traveling and Drone Videography. 
                 Web development has been my focus & passion and 
                 I enjoy learning & building using the latest technologies. I enjoy providing digital solutions. </SkillTitle>
-                </TextWrap>
+            </TextWrap>
             <SkillsWrapper>{getAbout(data)}</SkillsWrapper>
         </SkillsContainer>
     )
