@@ -1,27 +1,64 @@
 [
     {
-        "img": "../assets/images/image-1.jpg",
+        "img": "../assets/images/graphql.jpg",
         "alt": "Javascript",
         "name": "Javascript",
         "button": "View Repository"
     },
     {
-        "img": "../assets/images/image-1.jpg",
+        "img": "../assets/images/nodejs.jpg",
         "alt": "ReactJS",
         "name": "ReactJS",
         "button": "View Repository"
     },
     {
-        "img": "../assets/images/image-1.jpg",
+        "img": "../assets/images/py.jpg",
         "alt": "Python",
         "name": "Python",
         "button": "View Repository"
     },
     {
-        "img": "../assets/images/image-1.jpg",
+        "img": "../assets/images/styled.jpg",
         "alt": "GraphQL",
         "name": "GraphQL",
         "button": "View Repository"
 
-    }
+    },
+    {
+    "img": "../assets/images/react.jpg",
+    "alt": "Javascript",
+    "name": "Javascript",
+    "button": "View Repository"
+    },
+{
+    "img": "../assets/images/mongodb.jpg",
+    "alt": "ReactJS",
+    "name": "ReactJS",
+    "button": "View Repository"
+},
+{
+    "img": "../assets/images/javascript.jpg",
+    "alt": "Python",
+    "name": "Python",
+    "button": "View Repository"
+},
+{
+    "img": "../assets/images/html.jpg",
+    "alt": "GraphQL",
+    "name": "GraphQL",
+    "button": "View Repository"
+
+},
+{
+    "img": "../assets/images/gatsby.jpg",
+    "alt": "Python",
+    "name": "Python",
+    "button": "View Repository"
+},
+{
+    "img": "../assets/images/css.jpg",
+    "alt": "GraphQL",
+    "name": "GraphQL",
+    "button": "View Repository"
+}
 ]

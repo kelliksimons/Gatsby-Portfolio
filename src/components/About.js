@@ -22,7 +22,7 @@ const About = ({heading}) => {
                 name
                 img {
                 childImageSharp {
-                    fluid {
+                    fluid(quality:100){
                     ...GatsbyImageSharpFluid
                     }
           }
@@ -101,8 +101,8 @@ color: #fff;
 
 const SkillsWrapper = styled.div `
 display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 10px;
+grid-template-columns: repeat(10, 1fr);
+grid-gap: 2px;
 justify-items: center;
 padding: 0 2rem;
 
@@ -118,8 +118,8 @@ padding: 0 2rem;
 `
 const SkillCard = styled.div `
 line-height: 2;
-width: 100%;
-height: 500px;
+width: 100px;
+/*height: 500px;*/
 position: relative;
 border-radius: 10px;
 transition: 0.2 ease;

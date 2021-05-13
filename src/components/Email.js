@@ -31,7 +31,7 @@ const Email = () => {
                       <input type= "email" placeholder= "Enter your email address" id= "email" name ="email"/>
                       </label>
                       <textarea cols="30" rows= "8" placeholder= "Write something..." id= "message" name = "message"></textarea>
-                      <Button as ="button" 
+                      <Button as ="button"
                       type= "submit" 
                       primary="true" 
                       round= "true" 
@@ -94,6 +94,11 @@ form{
 `
 const FormWrap = styled.div `
 align-items: center;
+button:active{
+    transform: translateY(10px);
+    background-color: green;
+   
+}
 
 input,textarea{
     padding: 24px;
@@ -103,10 +108,10 @@ input,textarea{
     margin-top: 6px;
     margin-bottom: 16px;
     border-radius: 50px;
-    box-sizing: border-box;
     border: none;
     margin-right: 1rem;
     resize: vertical;
+
 
 
  /* }
@@ -126,7 +131,7 @@ textarea{
     flex-direction: column;
     padding: 0 1rem;
 
-    input{
+    input,textarea{
         margin-bottom: 1rem;
         width: 100%;
         margin-right: 0;
