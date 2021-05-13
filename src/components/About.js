@@ -6,6 +6,7 @@ import { Button } from './Button'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
+
 const About = ({heading}) => {
 
 
@@ -36,6 +37,8 @@ const About = ({heading}) => {
 
         `)
 
+   
+
 
 function getAbout(data){
     const aboutArray = []
@@ -49,11 +52,9 @@ function getAbout(data){
 
                 />
                 <SkillInfo>
-                <TextWrap>
-                <SkillTitle data-aos = "fade-down">{item.node.name}</SkillTitle>
-                </TextWrap>
+              
 
-                <Button 
+                {/* <Button 
                 to="/projects" 
                 primary="true" 
                 round="true" 
@@ -63,7 +64,7 @@ function getAbout(data){
                     font-size: 14px; `}>
                     
             {item.node.button}
-            </Button>
+            </Button> */}
 
             </SkillInfo>
             </SkillCard>
@@ -78,6 +79,13 @@ function getAbout(data){
     return (
         <SkillsContainer id = "About">
             <SkillsHeading>{heading}</SkillsHeading>
+                <img src={`image-1.jpg`}/>
+            <TextWrap>
+                <SkillTitle data-aos = "fade-down">My professional background is in Software Development 
+                and Project Management. I also enjoy Gaming, Traveling and Drone Videography. 
+                Web development has been my focus & passion and 
+                I enjoy learning & building using the latest technologies. I enjoy providing digital solutions. </SkillTitle>
+                </TextWrap>
             <SkillsWrapper>{getAbout(data)}</SkillsWrapper>
         </SkillsContainer>
     )
@@ -152,10 +160,11 @@ padding: 0 2rem;
 `
 
 const TextWrap = styled.div `
-display: flex;
-align-items: center;
-position: absolute;
-top: 375px;
+font-size: clamp(1.2rem, 5vw, 3rem);
+text-align: center;
+margin-bottom: 5rem;
+color: #fff;
+
 
 `
 

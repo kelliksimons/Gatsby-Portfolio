@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
+import {Link} from 'gatsby'
 import {StatsData} from '../data/StatsData'
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -9,7 +10,7 @@ const Stats = () => {
 
     return (
         <StatsContainer id = "Next">
-            <Heading>Why Choose Me</Heading>
+            <Heading>Professional Experience & Socials</Heading>
             <Wrapper data-aos = "fade-up">
             {StatsData.map((item,index)=>{
                 return(
@@ -17,6 +18,7 @@ const Stats = () => {
                     <Icon>{item.icon}</Icon>
                     <Title>{item.title}</Title>
                     <Description>{item.desc}</Description>
+                    <NavLink to= {item.link}>{item.link}</NavLink>
                 </StatsBox>
 
                 )
@@ -78,4 +80,7 @@ margin-bottom: 0.5rem;
 `
 const Description = styled.p `
 
+`
+const NavLink = styled(Link)`
+cursor: pointer;
 `

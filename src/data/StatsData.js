@@ -1,27 +1,32 @@
 import React from 'react'
 import {GiEarthAmerica} from 'react-icons/gi'
 import {MdAirplanemodeActive, MdTimer, MdTitle} from 'react-icons/md'
-import {FaMoneyCheck} from 'react-icons/Fa'
+import {FaMoneyCheck,FaLinkedin,FaGithubSquare} from 'react-icons/Fa'
 
 export const StatsData = [
     {
-        icon: (<GiEarthAmerica css={`color: #047bf1;`}/>),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
+        icon: (<GiEarthAmerica css={`color: #ff0000;`}/>),
+        title: "Project Manager, Bank of America",
+        desc: ""
     },
     {
-        icon: (<MdAirplanemodeActive css={`color: #f3a82e;`}/>),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
-    },
-    {
-        icon: (<MdTimer css={`color: #f34f2e;`}/>),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
+        icon: (<MdTimer css={`color: #ffff00;`}/>),
+        title: "Full Stack Engineer, Torch Developers",
+        desc: ""
     },
     {
         icon: (<FaMoneyCheck css={`color: #3af576;`}/>),
-        title: "Worked with Cross Functional Teams Across the Globe",
-        desc: "Equipped with the skill and mindset to tackle any challenge"
+        title: "Android Software Engineer, Xtern Software,Inc",
+        desc: ""
+    },
+    {
+        icon: (<FaGithubSquare css={`color: #FFF;`}/>),
+        title: "Github Repository",
+        link: "https://github.com/kelliksimons"
+    },
+    {
+        icon: (<FaLinkedin css={`color: #0072b1;`}/>),
+        title: "LinkedIn Profile",
+        link: "https://www.linkedin.com/in/kelliksimons/"
     },
 ]

@@ -28,8 +28,8 @@ const Testimonials = () => { // graph ql query for testimonial images
     
     return (
         <TestimonialsContainer id = "Projects">
-            <TopLine>Testimonials</TopLine>
-            <Description>Previous Projects</Description>
+            <TopLine>What's Next</TopLine>
+            <Description>Current Projects</Description>
             <ContentWrapper>
                 <ColumnOne data-aos = "flip-left">
                     <Testimonial data-aos = "fade">
@@ -37,10 +37,15 @@ const Testimonials = () => { // graph ql query for testimonial images
                         color: #3fffa8; 
                         font-size: 2rem; 
                         margin-bottom: 1rem;`}/>
-                        <h3>React Portfolio</h3>
+                        <h3>React Portfolio Revisioning</h3>
                         <p>
                         {" "}
-                        "In this project I translated a HTML template into a React application. Deployed via Github"</p>
+                        This is an on-going multi-phase project.<br/>
+                        My portfolio is an on-going learning environment for myself to test out and learn
+                        new languages & frameworks.<br/>
+                        Stage 1: Create a portfolio utilizing an html template & deploy on github.io.<br/>
+                        Stage 2: Utilize bootstrap and react for design & optimization to enhance portfolio and deploy via heroku.<br/>
+                        Current Stage: Utilize React,Gatsby,GraphQL,Styled Components,Animations and more to create a portfolio that brings my background & passion to view.</p>
                     </Testimonial>
                     <Testimonial data-aos = "fade">
                         <FaRegLightbulb css={`
