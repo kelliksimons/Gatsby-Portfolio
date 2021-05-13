@@ -15,23 +15,31 @@ const About = ({heading}) => {
     }, []);
     const data = useStaticQuery(graphql`
      query AboutQuery {
-        allAboutJson {
-            edges {
-            node {
-                alt
-                button
-                name
-                img {
-                childImageSharp {
-                    fluid(quality:100){
-                    ...GatsbyImageSharpFluid
-                    }
+  allAboutJson {
+    edges {
+      node {
+        alt
+        button
+        name
+        img {
+          childImageSharp {
+            fluid(quality:100) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   }
+  file(relativePath: {eq: "image-1.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
 }
+
 
 
 
@@ -79,7 +87,7 @@ function getAbout(data){
     return (
         <SkillsContainer id = "About">
             <SkillsHeading>{heading}</SkillsHeading>
-                <img src={`image-1.jpg`}/>
+                <HeaderImg fluid={data.file.childImageSharp.fluid}/>
             <TextWrap>
                 <SkillTitle data-aos = "fade-down">My professional background is in Software Development 
                 and Project Management. I also enjoy Gaming, Traveling and Drone Videography. 
@@ -173,4 +181,13 @@ font-weight: 400;
 font-size: 1rem;
 margin-left: 0.5rem;
 
+`
+
+const HeaderImg = styled(Img)`
+height:25%;
+max-width: 25%;
+border-radius: 10px;
+margin-left: 450px;
+margin-bottom: 100px;
+align-items: center;
 `
