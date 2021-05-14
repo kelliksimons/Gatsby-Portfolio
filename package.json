@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "aos": "^2.3.4",
     "babel-plugin-styled-components": "^1.12.0",
     "emailjs-com": "^2.6.4",

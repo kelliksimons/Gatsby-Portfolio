@@ -117,6 +117,8 @@ margin-bottom: 5rem;
 color: #fff;
 ` 
 
+
+
 const SkillsWrapper = styled.div `
 display: grid;
 grid-template-columns: repeat(10, 1fr);
