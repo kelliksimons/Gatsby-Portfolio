@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import {FaBars} from 'react-icons/fa'
 import {MenuData} from '../data/MenuData'
 import { Button } from "./Button"
-import resume from "../assets/Docs/kellik-resume.pdf"
 
 
 const Header = () => {
