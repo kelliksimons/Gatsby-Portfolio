@@ -6,7 +6,6 @@ import {MenuData} from '../data/MenuData'
 import { Button } from "./Button"
 import resume from "../assets/Docs/kellik-resume.pdf"
 
-//let Link     = Scroll.Link;
 
 const Header = () => {
 
