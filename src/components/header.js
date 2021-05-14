@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 //import {Link} from "react-scroll"
 import styled from 'styled-components'
 import {FaBars} from '@react-icons/all-files/fa/FaBars'
-import {menuData} from '../data/MenuData'
+import {MenuData} from '../data/MenuData'
 import { Button } from "./Button"
 import resume from "../assets/Docs/kellik-resume.pdf"
 
@@ -16,7 +16,7 @@ const Header = () => {
       <NavLink to= "/">Kellik Simons Portfolio</NavLink>
       <Bars />
       <NavMenu>
-        {menuData.map((item,index) => (
+        {MenuData.map((item,index) => (
 
           <NavLink to={item.link} key={index}>
             {item.title}
