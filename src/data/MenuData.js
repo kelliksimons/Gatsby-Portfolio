@@ -1,4 +1,4 @@
-export const menuData =[
+export const MenuData =[
 
     {title: "About", link: "/#About"},
     {title: "Projects", link: "/#Projects"},

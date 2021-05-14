@@ -1,5 +1,5 @@
 import React from 'react'
-import {GiEarthAmerica} from 'react-icons/gi'
+import {GiEarthAmerica} from '@react-icons/all-files/gi/GiEarthAmerica'
 import {MdAirplanemodeActive, MdTimer, MdTitle} from 'react-icons/md'
 import {FaMoneyCheck,FaLinkedin,FaGithubSquare} from 'react-icons/Fa'
 
