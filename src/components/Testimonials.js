@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import { FaRegLightbulb } from '@react-icons/all-files/fa/FaRegLightBulb'
-import {IoMdCheckmarkCircleOutline} from '@react-icons/all-files/io/IoMdCheckmarkCircleOutline'
+import { FaRegLightbulb } from 'react-icons/fa'
+import {IoMdCheckmarkCircleOutline} from 'react-icons/io'
 import { useStaticQuery,graphql } from 'gatsby'
 import Aos from 'aos'
 import "aos/dist/aos.css"

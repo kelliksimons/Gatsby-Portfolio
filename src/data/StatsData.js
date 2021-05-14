@@ -1,7 +1,7 @@
 import React from 'react'
 import {GiEarthAmerica} from '@react-icons/all-files/gi/GiEarthAmerica'
 import {MdAirplanemodeActive, MdTimer, MdTitle} from 'react-icons/md'
-import {FaMoneyCheck,FaLinkedin,FaGithubSquare} from 'react-icons/Fa'
+import {FaMoneyCheck,FaLinkedin,FaGithubSquare} from 'react-icons/fa'
 
 export const StatsData = [
     {
