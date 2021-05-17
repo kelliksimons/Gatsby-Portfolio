@@ -114,18 +114,7 @@ input,textarea{
 
 
 
- /* }
-textarea{
-    padding: 1rem 1.5rem;
-    outline: none;
-    width: 50%;
-    height: 200px;
-    border-radius: 50px;
-    border: none;
-    margin-left: 5rem;
-    
 
-} */
 @media screen and(max-width: 768px){
     display: flex;
     flex-direction: column;
