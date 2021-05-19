@@ -204,6 +204,6 @@ align-items: center;
 
 @media screen and (max-width: 500px){
   max-width: 50%;
-  margin-left: 140px;
+  margin-left: 120px;
 }
 `
