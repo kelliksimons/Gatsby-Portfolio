@@ -94,7 +94,8 @@ function getAbout(data){
                 <SkillTitle data-aos = "fade-down">My professional background is in Software Development 
                 and Project Management. I also enjoy Gaming, Traveling and Drone Videography. 
                 Web development has been my focus & passion and 
-                I enjoy learning & building using the latest technologies. I enjoy providing digital solutions. </SkillTitle>
+                I enjoy learning & building using the latest technologies. I enjoy providing digital solutions. <br/>
+                Fun fact: The footage above is taken by me :) </SkillTitle>
             </TextWrap>
             <SkillsWrapper>{getAbout(data)}</SkillsWrapper>
         </SkillsContainer>
