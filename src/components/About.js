@@ -194,4 +194,15 @@ border-radius: 10px;
 margin-left: 450px;
 margin-bottom: 100px;
 align-items: center;
+
+@media screen and (max-width: 768px){
+  max-width: 50%;
+  margin-left: 200px;
+
+}
+
+@media screen and (max-width: 500px){
+  max-width: 50%;
+  margin-left: 140px;
+}
 `
