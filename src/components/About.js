@@ -132,7 +132,7 @@ padding: 0 2rem;
 }
 
 @media screen and (max-width: 868px){
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 `
